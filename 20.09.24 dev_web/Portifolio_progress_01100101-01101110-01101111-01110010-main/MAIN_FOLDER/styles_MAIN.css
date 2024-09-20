@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão do corpo */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usa flexbox para layout */
+}
+
+header {
+    display: flex;
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Preenchimento do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+}
+
+nav {
+    position: sticky; /* Faz o menu ficar fixo ao rolar */
+    top: 50%; /* Fixa o menu no topo */
+    transform: translateY(50%); /* Centraliza o menu verticalmente */
+    background-color: #dd6363; /* Cor de fundo do menu */
+    padding: 10px; /* Preenchimento do menu */
+    width: 10vw; /* Largura do menu */
+    height: 10vh;
+}
+
+nav ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+nav ul li {
+    margin: 10px 0; /* Margem entre os itens da lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor dos links */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Cor ao passar o mouse sobre os links */
+}
+
+main {
+    flex-grow: 1; /* Faz o main ocupar o espaço restante */
+    padding: 20px; /* Preenchimento do main */
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Preenchimento do rodapé */
+    background-color: #f1f1f1; /* Cor de fundo do rodapé */
+}

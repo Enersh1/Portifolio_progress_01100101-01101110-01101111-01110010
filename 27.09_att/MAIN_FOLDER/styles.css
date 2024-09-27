@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Adiciona coluna para layout */
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Alinha itens verticalmente */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    position: sticky; /* Faz o menu ficar fixo ao rolar */
+    top: 50vh; /* Fixa o menu no topo da página */
+    width: 10vh; /* Largura do menu */
+    height: 100vh; /* Altura total da viewport */
+    background-color: #6d6c6c; /* Cor de fundo do menu */
+    padding: 10px; /* Preenchimento do menu */
+}
+
+
+
+
+anav {
+    position: sticky;
+    top: 0; /* Fixa o menu no topo */
+    background-color: #dd6363;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+main > div {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+
+}
+
+Amain {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border: #333;
+    border-style: solid;
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,125 @@
+/* Definindo estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    color: #9b59b6;
+    /* Roxo vibrante */
+}
+
+p,
+a {
+    color: #aaa;
+}
+
+a {
+    text-decoration: none;
+    color: #9b59b6;
+}
+
+/* Estilizando o menu lateral */
+#menu {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 200px;
+    height: 80%;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#menu a {
+    width: 100%;
+    height: 10%;
+    transition: width 2s;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 3px solid #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+#menu a:hover {
+    align-items: center;
+    width: 200px;
+    background: #9b59b6;
+}
+
+/* Definindo a área principal */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Estilizando a Logo */
+#logo {
+    position: sticky;
+}
+
+/* Seção: Sobre Mim */
+#sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre-mim img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* Seção: Experiências */
+.experiencia {
+    margin-top: 30px;
+}
+
+.experiencia a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.experiencia p {
+    margin-bottom: 20px;
+}
+
+/* Seção: Contato */
+.contato-item {
+    margin-bottom: 15px;
+}
+
+/* Links para navegação interna */
+section {
+    padding: 50px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #menu {
+        width: 100px;
+    }
+
+    #menu a {
+        font-size: 14px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+    }
+
+    #sobre-mim img {
+        width: 150px;
+        height: 150px;
+    }
+}

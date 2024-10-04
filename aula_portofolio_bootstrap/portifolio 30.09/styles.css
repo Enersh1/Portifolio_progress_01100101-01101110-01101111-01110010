@@ -1,0 +1,148 @@
+/* Definindo estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: rgb(0, 0, 0);
+}
+
+h1,
+h2,
+h3 {
+    color: #9b59b6; /* Roxo vibrante */
+}
+
+p,
+a {
+    color: #aaa;
+}
+
+a {
+    text-decoration: none;
+    color: #9b59b6;
+}
+
+/* Estilizando o menu lateral */
+#menu {
+    position: fixed;
+    top: 0; /* Colocando o menu no topo */
+    left: 0;
+    width: 200px;
+    height: 100vh; /* Fazendo o menu ocupar toda a altura da tela */
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-image {
+    width: 100%; /* Largura total do menu */
+    height: auto; /* Altura automática para manter proporções */
+}
+
+#menu a {
+    width: 100%;
+    height: 10%; /* Pode ser ajustado se necessário */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 3px solid #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+#menu a:hover {
+    background: #9b59b6;
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Definindo a área principal */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Estilizando a Logo */
+#logo {
+    position: sticky;
+}
+
+/* Seção: Sobre Mim */
+#sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre-mim img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* Seção: Experiências */
+.experiencia {
+    background: #222; /* Fundo mais escuro */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin-top: 30px;
+}
+
+.experiencia h3 {
+    color: #9b59b6;
+
+}
+
+.experiencia a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.experiencia p {
+    margin-bottom: 20px;
+}
+
+/* Seção: Contato */
+.contato-item {
+    margin-bottom: 15px;
+}
+
+.contato-item-email p {
+    color: #000;
+}
+/* Links para navegação interna */
+section {
+    padding: 50px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove a margem quando o menu é horizontal */
+        padding: 20px;
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+        font-size: 14px;
+    }
+
+    #sobre-mim img {
+        width: 150px;
+        height: 150px;
+    }
+}
